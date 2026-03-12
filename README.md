@@ -1,86 +1,74 @@
-#  Telecom Customer Churn Analysis | Excel • SQL • Power BI
+# Customer Churn Prediction
 
 ## Project Overview
-Customer churn is a major challenge in the telecom industry as it directly impacts revenue and customer retention.  
-This project analyzes customer churn data to identify key churn drivers and present clear business insights using Excel, SQL, and Power BI.
+Customer churn occurs when customers stop using a company's services. 
+Predicting churn helps businesses improve retention and reduce revenue loss.
 
----
+This project analyzes telecom customer data and builds a machine learning 
+model to predict which customers are likely to churn.
 
-##  Objectives
-- Clean and prepare raw churn data  
-- Calculate important churn KPIs  
-- Explore churn patterns across customer segments  
-- Build an interactive Power BI dashboard  
+## Dataset Features
 
----
+Some important features used:
 
-##  Tools Used
-- **Excel** – Data cleaning, KPI calculations, EDA  
-- **SQL Server** – KPI validation and churn analysis  
-- **Power BI** – Data modeling and dashboard visualization  
+- Tenure in Months
+- Internet Service
+- Contract Type
+- Payment Method
+- Monthly Charges
+- Total Revenue
 
----
+Target variable:
+Customer Status (Churned or Stayed)
 
-##  Workflow
+## Technologies Used
 
-### 1️ Data Cleaning & Preparation (Excel)
-- Fixed inconsistencies and formatting  
-- Handled missing values logically  
-- Created age and tenure groupings  
+Python
+Pandas
+NumPy
+Scikit-learn
+Matplotlib
+Seaborn
 
-### 2️ KPI & Exploratory Analysis (Excel)
-Calculated:
-- Total Customers  
-- Churned Customers  
-- New Joiners  
-- Churn Rate  
-- Revenue impact  
+## Machine Learning Model
 
-Analyzed churn by:
-- Demographics  
-- Services  
-- Contracts  
-- Payment methods  
-- Churn reasons  
+Random Forest Classifier
 
-### 3️ SQL Validation
-- Recreated KPIs in SQL  
-- Verified Excel results  
-- Aggregated churn patterns  
+Steps performed:
 
-### 4️ Power BI Dashboard
-- Built calculated measures  
-- Created interactive visuals  
-- Designed structured churn insights  
+1. Data cleaning
+2. Exploratory data analysis
+3. Feature encoding
+4. Train-test split
+5. Feature scaling
+6. Model training
+7. Hyperparameter tuning
+8. Model evaluation
 
----
+## Model Performance
 
-##  Key Insights
-- Month-to-month contracts have highest churn  
-- Competitors are main churn driver  
-- Service dissatisfaction increases churn  
-- Low tenure customers churn most  
-- Payment methods influence churn  
-- Geography has minimal impact  
+Accuracy: ~85%
 
----
+Evaluation metrics used:
 
-##  Final Output
-Interactive Power BI dashboard showing churn behavior and revenue impact.
+- Confusion Matrix
+- Classification Report
+- ROC Curve
 
----
+## Key Insights
 
-##  Skills Demonstrated
-- Data Cleaning  
-- KPI Development  
-- SQL Analysis  
-- EDA  
-- Power BI Visualization  
-- Business Storytelling  
+Customers with month-to-month contracts are more likely to churn.
 
----
+Higher monthly charges increase churn probability.
 
----
+Customers using fiber optic internet showed higher churn rates.
 
-##  Conclusion
-This project demonstrates a complete analytics workflow from raw data to business insights, showcasing practical use of Excel, SQL, and Power BI for churn analysis.
+## Project Workflow
+
+Data → Preprocessing → EDA → Model Training → Evaluation → Prediction
+
+## Future Improvements
+
+- Try Gradient Boosting / XGBoost
+- Deploy using Streamlit
+- Build Power BI dashboard

@@ -1,74 +1,40 @@
-# Customer Churn Prediction
+# Telecom Customer Churn Analysis
 
 ## Project Overview
 Customer churn occurs when customers stop using a company's services. 
-Predicting churn helps businesses improve retention and reduce revenue loss.
+This project analyzes telecom customer data to identify churn patterns 
+and key business insights using SQL, Excel, and Power BI.
 
-This project analyzes telecom customer data and builds a machine learning 
-model to predict which customers are likely to churn.
+## Tools Used
+SQL  
+Excel  
+Power BI  
+Data Analysis
 
-## Dataset Features
+## Key Analysis Performed
+• Customer churn rate analysis  
+• Revenue analysis  
+• Contract type impact on churn  
+• Internet service churn comparison  
+• Monthly charge vs churn behavior
 
-Some important features used:
+## Key KPIs
+Total Customers  
+Churn Rate  
+Average Monthly Revenue  
+Customer Retention Rate
 
-- Tenure in Months
-- Internet Service
-- Contract Type
-- Payment Method
-- Monthly Charges
-- Total Revenue
-
-Target variable:
-Customer Status (Churned or Stayed)
-
-## Technologies Used
-
-Python
-Pandas
-NumPy
-Scikit-learn
-Matplotlib
-Seaborn
-
-## Machine Learning Model
-
-Random Forest Classifier
-
-Steps performed:
-
-1. Data cleaning
-2. Exploratory data analysis
-3. Feature encoding
-4. Train-test split
-5. Feature scaling
-6. Model training
-7. Hyperparameter tuning
-8. Model evaluation
-
-## Model Performance
-
-Accuracy: ~85%
-
-Evaluation metrics used:
-
-- Confusion Matrix
-- Classification Report
-- ROC Curve
+## Dashboard
+The Power BI dashboard provides interactive insights into customer behavior and churn trends.
 
 ## Key Insights
+Customers with month-to-month contracts have the highest churn rate.
 
-Customers with month-to-month contracts are more likely to churn.
+Fiber optic internet users show higher churn compared to DSL users.
 
-Higher monthly charges increase churn probability.
+Customers with higher monthly charges tend to churn more frequently.
 
-Customers using fiber optic internet showed higher churn rates.
-
-## Project Workflow
-
-Data → Preprocessing → EDA → Model Training → Evaluation → Prediction
-
-## Future Improvements
-
-- Try Gradient Boosting / XGBoost
-- Deploy using Streamlit
-- Build Power BI dashboard
+## Project Files
+Dataset: Telecom Customer Churn Analysis.xlsx  
+SQL Queries: SQL KPI-EDA QUERIES.sql  
+Power BI Dashboard: Power BI Dashboard.pbix
